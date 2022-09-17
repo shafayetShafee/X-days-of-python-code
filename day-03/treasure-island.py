@@ -23,24 +23,24 @@ direction = Prompt.ask(
 )
 
 if direction.lower() != "left":
-    console.print("[red1]Fall into a hole.\nGame Over[/red1]")
+    console.print("[red1]Fall into a hole.\nGame Over[/red1] :pirate_flag:")
 else:
     swim = Prompt.ask(
         '\nYou came to a lake. Ther is an island in the middle of the lake.\nType "wait" to wait for a boat. Type "swim" to swim across',
         choices=["wait", "swim"],
     )
     if swim.lower() != "wait":
-        console.print("[red1]Attacked by trout.\nGame Over[/red1]")
+        console.print("[red1]Attacked by trout.\nGame Over[/red1] :pirate_flag:")
     else:
         door = Prompt.ask(
             "\nYou arrive at the island unharmed.\nThere is a house with 3 doors.\nOne red, one yellow and one blue. Which color do you choose?",
             choices=["red", "yellow", "blue"],
         ).lower()
         if door == "yellow":
-            console.print("[gold1]You win![/gold1]")
+            console.print("[gold1]You win![/gold1] :moneybag:")
         elif door == "red":
-            console.print("[red1]Burned By Fire\nGame Over[/red1]")
+            console.print("[red1]Burned By Fire\nGame Over[/red1] :pirate_flag:")
         elif door == "blue":
-            console.print("[red1]Eaten By Beasts\nGame Over[/red1]")
+            console.print("[red1]Eaten By Beasts\nGame Over[/red1] :pirate_flag:")
         else:
-            console.print("[red1]Game Over[/red1]")
+            console.print("[red1]Game Over[/red1] :pirate_flag:")
