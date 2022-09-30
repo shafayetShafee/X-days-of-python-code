@@ -26,9 +26,9 @@ n_numbers = IntPrompt.ask("[blue1]How many numbers would you like?")
 list_symbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"]
 
 # randomly selects letters, symbols and numbers
-letters = random.sample(string.ascii_letters, n_letters)
-symbols = random.sample(list_symbols, n_symbols)
-numbers = random.sample(string.digits, n_numbers)
+letters = random.choices(string.ascii_letters, k = n_letters)
+symbols = random.choices(list_symbols, k = n_symbols)
+numbers = random.choices(string.digits, k = n_numbers)
 
 # then shuffle the whole list
 result_list = letters + symbols + numbers
