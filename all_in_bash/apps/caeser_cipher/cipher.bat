@@ -21,15 +21,15 @@ if "%1" == "" (
 goto :eof
 
 :case-help
-	echo Run the app 'bandname-generator' from windows cmd
-	echo This app will prompt to you for your city name and pet name
-	echo and then combine those name to create a band name for you.
+	echo Runs the app 'Caeser-cipher' from windows cmd in two mode (normal or rich formatted)
+	echo This app will prompt you to for a text that you want to cipher or decipher
+	echo and the shift-number in caeser-ciphering
 	echo.
-	echo Syntax: bandname.bat [help^|rich]
+	echo Syntax: cipher.bat [help^|rich]
 	echo Options:
 	echo help Print this help
-	echo rich Enable the rich formatting for the app on the cli
-	echo.
+	echo rich	Enable the rich formatting for the app on the cli
+	echo. 
 	goto :eof
 
 :case-base
