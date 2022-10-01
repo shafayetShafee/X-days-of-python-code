@@ -1,6 +1,5 @@
 @echo off
 
-rem call and mask out invalid call targets
 if "%1" == "" (
   goto :case-base	
 ) else (
@@ -21,6 +20,7 @@ if "%1" == "" (
 goto :eof
 
 :case-help
+  echo.
 	echo Run the app 'bandname-generator' from windows cmd
 	echo This app will prompt to you for your city name and pet name
 	echo and then combine those name to create a band name for you.
